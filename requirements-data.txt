@@ -1,0 +1,7 @@
+-r requirements.txt
+datasets>=3.0.0,<5
+requests>=2.32.0,<3
+pypdf>=5.0.0,<7
+pymupdf>=1.24.0,<2
+beautifulsoup4>=4.12.0,<5
+

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legal-agent-vn"
+version = "0.3.0"
+description = "Multi-agent RAG for Vietnamese legal-document retrieval"
+requires-python = ">=3.11,<3.13"
+dynamic = ["dependencies"]
+
+[project.scripts]
+legal-agent = "main:main"
+
+[tool.setuptools]
+py-modules = ["app", "config", "main"]
+
+[tool.setuptools.packages.find]
+include = ["agents*", "evaluation*", "ingestion*", "retrieval*", "scripts*", "tools*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+exclude = ["colab"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+

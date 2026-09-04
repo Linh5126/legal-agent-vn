@@ -1,0 +1,19 @@
+# Runtime
+google-genai>=1.5.0,<3
+langgraph>=0.2.60,<2
+pydantic>=2.9.0,<3
+pydantic-settings>=2.6.1,<3
+python-dotenv>=1.0.1,<2
+tenacity>=9.0.0,<10
+
+# Retrieval (lần đầu chạy sẽ tải model BGE từ Hugging Face)
+qdrant-client>=1.12.0,<2
+FlagEmbedding>=1.3.0,<2
+sentence-transformers>=3.3.0,<6
+rank-bm25>=0.2.2,<1
+numpy>=1.26.0,<3
+
+# UI
+gradio>=6.0.0,<7
+# Hỗ trợ môi trường doanh nghiệp/CI khai báo SOCKS proxy.
+httpx[socks]>=0.28.0,<1
