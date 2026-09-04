@@ -1,0 +1,37 @@
+[
+  {
+    "id": "q001",
+    "question": "Người lao động nữ đang mang thai có được đơn phương chấm dứt hợp đồng lao động không?",
+    "ground_truth_answer": "Có, nếu việc tiếp tục làm việc có ảnh hưởng xấu tới thai nhi và có xác nhận của cơ sở khám chữa bệnh có thẩm quyền.",
+    "relevant_chunk_ids": [
+      "45/2019/QH14::dieu_138"
+    ],
+    "type": "single_hop"
+  },
+  {
+    "id": "q002",
+    "question": "Nếu thông tin pháp lý trong corpus không đủ để kết luận thì hệ thống nên làm gì?",
+    "ground_truth_answer": "Hệ thống phải nêu rõ chưa đủ căn cứ để khẳng định thay vì suy đoán.",
+    "relevant_chunk_ids": [],
+    "type": "abstention_smoke"
+  },
+  {
+    "id": "q003",
+    "question": "Người lao động phải báo trước bao lâu khi đơn phương chấm dứt hợp đồng lao động không xác định thời hạn?",
+    "ground_truth_answer": "Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn.",
+    "relevant_chunk_ids": [
+      "45/2019/QH14::dieu_35"
+    ],
+    "type": "single_hop"
+  },
+  {
+    "id": "q004",
+    "question": "Người lao động nữ mang thai đơn phương chấm dứt hợp đồng vì ảnh hưởng tới thai nhi thì có phải báo trước không?",
+    "ground_truth_answer": "Không, đây là một trong các trường hợp được đơn phương chấm dứt hợp đồng mà không cần báo trước.",
+    "relevant_chunk_ids": [
+      "45/2019/QH14::dieu_138",
+      "45/2019/QH14::dieu_35"
+    ],
+    "type": "multi_hop"
+  }
+]
